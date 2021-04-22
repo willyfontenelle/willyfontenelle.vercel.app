@@ -1,27 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>W.Design</title>
 
-    <p>At Mozilla, we’re a global community of</p>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
 
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+    <body>
+        <header>
+			<div class="menu">
+				<h1><img src="images/logow.png"></h1>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Services</a></li>
+						<li><a href="contato.html">About</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<main>
+			<section class="principal">
+				<h2 class="titulo-principal">Willy Fontenelle</h2>
+				<img class="foto" src="images/foto.png" alt="Foto minha lindão.">
+				
+				<p>Designer</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper mauris ac velit convallis, vitae varius lectus rhoncus. Aliquam tincidunt ex ut elit venenatis, vitae luctus est sollicitudin. Nulla egestas nisl sed velit ullamcorper, et tempus sem tincidunt. Vestibulum euismod lectus sit amet leo sollicitudin facilisis. Curabitur blandit quis neque ut dictum.	
+				</p>
+			</section>
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-    <button>Mudar usuário</button>
-    <script src="scripts/main.js"></script>
-  </body>
-</html>
+			<section class="services">
+				<ul class="boxes">
+					<li>
+						<img src="images/services.png">
+						<h2>UI/UX</h2>
+						<p class="boxes-descricao">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+					</li>
+					<li>
+						<img src="images/services.png">
+						<h2>UI/UX</h2>
+						<p class="boxes-descricao">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+					</li>
+					<li>
+						<img src="images/services.png">
+						<h2>UI/UX</h2>
+						<p class="boxes-descricao">Lorem ipsum dolor sit amet consectetur adipiscing</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="meiao">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper mauris ac velit convallis, vitae varius lectus rhoncus. Aliquam tincidunt ex ut elit venenatis, vitae luctus est sollicitudin. Nulla egestas nisl sed velit ullamcorper, et tempus sem tincidunt. Vestibulum euismod lectus sit amet leo sollicitudin facilisis. Curabitur blandit quis neque ut dictum.	
+				</p>
+			</section>
+
+			<section class="contact">
+				<h2 class="titulo-contato">Contato</h2>
+				<form>
+					<label for="nomesobrenome">Nome e sobrenome</label>
+					<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+					<label for="email">Email</label>
+					<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+					<label for="telefone">Telefone</label>
+					<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+					<label for="mensagem">Mensagem</label>
+					<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+					<fieldset>
+						<legend>Serviço desejado</legend>
+						<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> UI/UX</label>
+						
+						<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Branding</label>
+						
+						<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> Illustration</label>
+					</fieldset>
+					<input type="submit" value="Enviar" class="enviar">
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<img src="images/logow.png" alt="W.Design">
+			<p class="copyright">&copy; Copyright W.Design - 2021</p>
+		</footer>
+		
+    </body>
