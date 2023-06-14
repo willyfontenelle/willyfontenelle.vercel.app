@@ -34,7 +34,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-blue-600 text-white py-3 px-4  border-none rounded-md ml-8"
-                  href="/curriculoWilly-us_compressed.pdf" target="_blank" rel="noopener noreferrer"
+                  href="/curriculoWilly-us_compressed.pdf" target="_blank" rel="noopener noreferrer" 
                 >Resume</a>
               </li>
             </ul>
@@ -47,19 +47,19 @@ export default function Home() {
               Designer and developer
             </h3>
             <p className="text-md py-5 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            I'm passionate about how design and technology come together, especially involving design systems in digital products.
+            I am passionate about how design and technology come together, especially involving design systems in digital products.
             </p>
             <div className="text-4xl flex justify-center gap-8 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank"><BsLinkedin /></a>
-              <a href="https://github.com/willyfontenelle" target="_blank"><BsGithub /></a>
-              <a href="https://www.behance.net/willyfontenelle" target="_blank"><BsBehance /></a>
-              <a href="https://medium.com/@willyfontenelle" target="_blank"><BsMedium /></a>
+              <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
+              <a href="https://github.com/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
+              <a href="https://www.behance.net/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsBehance /></a>
+              <a href="https://medium.com/@willyfontenelle" target="_blank" rel="noopener noreferrer"><BsMedium /></a>
             </div>
           </div>
           <div>
             <ul className="flex justify-center">
               <li className='rounded-full w-56 h-56 relative overflow-hidden mt-1 md:h-80 md:w-80'>
-              <Image src={avatar} objectFit="cover" />
+              <Image src={avatar} objectFit="cover" alt='avatar' />
               </li>
             </ul>
           </div>
