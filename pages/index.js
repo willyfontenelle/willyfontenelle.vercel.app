@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-8 mb-4 flex justify-center dark:text-white">
+          <nav className="py-8 mb-2 flex justify-center dark:text-white">
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <div>
             <ul className="flex justify-center">
-              <li className='rounded-full w-56 h-56 relative overflow-hidden mt-1 md:h-80 md:w-80'>
+              <li className='rounded-full w-56 h-56 relative overflow-hidden mb-10 md:h-80 md:w-80'>
               <Image src={avatar} objectFit="cover" alt='avatar' />
               </li>
             </ul>
