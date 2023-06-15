@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-8 mb-4 flex justify-center dark:text-white">
+          <nav className="py-8 mb-2 flex justify-center dark:text-white">
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
