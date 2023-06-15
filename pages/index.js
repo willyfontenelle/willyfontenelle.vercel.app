@@ -58,7 +58,7 @@ export default function Home() {
           </div>
           <div>
             <ul className="flex justify-center">
-              <li className='rounded-full w-56 h-56 relative overflow-hidden mt-1 md:h-80 md:w-80'>
+              <li className='rounded-full w-56 h-56 relative overflow-hidden mb-10 md:h-80 md:w-80'>
               <Image src={avatar} objectFit="cover" alt='avatar' />
               </li>
             </ul>
