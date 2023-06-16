@@ -20,7 +20,6 @@ export default function Home() {
         <title>Willy Fontenelle</title>
         <meta name="description" content="Designer and developer" />
 
-        <meta property="og:url" content="https://willyfontenelle.github.io/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Willy Fontenelle" />
         <meta property="og:description" content="Designer and developer" />
