@@ -20,11 +20,10 @@ export default function Home() {
         <title>Willy Fontenelle</title>
         <meta name="description" content="Designer and developer" />
 
-        <meta property="og:url" content="https://willyfontenelle.github.io/"/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="Willy Fontenelle"/>
-        <meta property="og:description" content="Designer and developer"/>
-        <meta property="og:image" content="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/globocom_opengraph.png"/>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Willy Fontenelle" />
+        <meta property="og:description" content="Designer and developer" />
+        <meta property="og:image" content="https://https://willyfontenelle.github.io/image.jpg"></meta>
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -35,7 +34,6 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
                 />
               </li>
               <li>
