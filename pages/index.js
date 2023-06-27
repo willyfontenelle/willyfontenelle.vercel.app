@@ -34,7 +34,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-blue-600 text-white py-3 px-4  border-none rounded-md ml-8"
-                  href="/curriculoWilly-us_compressed.pdf" target="_blank" rel="noopener noreferrer" 
+                  href="/curriculoWilly-en_compressed.pdf" target="_blank" rel="noopener noreferrer" 
                 >Resume</a>
               </li>
             </ul>
