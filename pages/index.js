@@ -19,6 +19,12 @@ export default function Home() {
       <Head>
         <title>Willy Fontenelle</title>
         <meta name="description" content="Designer and developer" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Willy Fontenelle" />
+        <meta property="og:description" content="Designer and developer" />
+        <meta property="og:image" content="https://willyfontenelle.github.io/image.jpg" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
