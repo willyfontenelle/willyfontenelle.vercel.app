@@ -5,8 +5,11 @@ import {
   BsLinkedin,
   BsGithub,
   BsBehance,
-  BsMedium
+  BsMedium,
 } from "react-icons/bs";
+import { 
+  FiFigma
+} from "react-icons/fi";
 import { useState } from "react";
 import avatar from "../public/avatar.jpg"
 import Image from "next/image";
@@ -55,11 +58,12 @@ export default function Home() {
             <p className="text-md py-5 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             I am passionate about how design and technology come together, especially involving design systems in digital products.
             </p>
-            <div className="text-4xl flex justify-center gap-8 py-3 text-gray-600 dark:text-gray-400">
+            <div className="text-4xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
               <a href="https://github.com/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
               <a href="https://www.behance.net/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsBehance /></a>
               <a href="https://medium.com/@willyfontenelle" target="_blank" rel="noopener noreferrer"><BsMedium /></a>
+              <a href="https://www.figma.com/@willyfontenelle" target="_blank" rel="noopener noreferrer"><FiFigma /></a>
             </div>
           </div>
           <div>
