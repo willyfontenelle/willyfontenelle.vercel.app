@@ -31,24 +31,26 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-white dark:bg-zinc-900 md:px-20 lg:px-40">
+      <main className=" bg-white dark:bg-gray-900 md:px-20 lg:px-40 transition-color duration-700">
         <section className="min-h-screen">
           <nav className="py-8 mb-2 flex justify-center">
             <ul className="flex items-center">
               <li>
                 <div
-                  className={`cursor-pointer text-2xl ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'
-                    }`}
+                  className={`cursor-pointer text-2xl ${darkMode
+                    ? 'text-white hover:text-gray-200 active:text-gray-400'
+                    : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    } transition-color duration-700 `} // Adicionando a classe de transição para a cor do texto
                   onClick={() => setDarkMode(!darkMode)}
                 >
-                  {darkMode ? < BsFillMoonStarsFill /> : < BsSunFill />}
+                  {darkMode ? <BsFillMoonStarsFill /> : <BsSunFill />}
                 </div>
               </li>
               <li>
                 <a
                   className={`bg-blue-600 text-white py-3 px-4 border-none rounded-md ml-8 ${darkMode
-                      ? 'hover:bg-blue-700 active:bg-blue-800'
-                      : 'hover:bg-blue-700 active:bg-blue-800'
+                    ? 'hover:bg-blue-700 active:bg-blue-800'
+                    : 'hover:bg-blue-700 active:bg-blue-800'
                     } focus:outline-none`}
                   href="/curriculoWilly-en_compressed.pdf"
                   target="_blank"
@@ -61,30 +63,52 @@ export default function Home() {
           </nav>
 
           <div className="text-center p-10 py-10">
-            <h2 className="text-4xl py-2 text-blue-600 font-bold dark:text-blue-500 md:text-6xl">
+            <h2 className="text-4xl py-2 text-blue-600 font-bold dark:text-blue-500 md:text-6xl transition-color duration-700">
               Willy Fontenelle
             </h2>
-            <h3 className="text-2xl py-2 text-gray-500 dark:text-gray-400 md:text-2xl">
+            <h3 className="text-2xl py-2 text-gray-500 dark:text-gray-400 md:text-2xl transition-color duration-700">
               Designer and developer
             </h3>
-            <p className="text-md py-5 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
+            <p className="text-md py-5 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl transition-color duration-700">
               I am passionate about how design and technology come together, especially involving design systems in digital products.
             </p>
             <div className="text-4xl flex justify-center gap-4 py-3">
               <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsLinkedin className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+                <BsLinkedin
+                  className={`cursor-pointer ${darkMode
+                      ? 'text-white hover:text-gray-200 active:text-gray-400'
+                      : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    } transition-color duration-700`} // Adicionando a classe de transição para a cor do texto
+                />
               </a>
               <a href="https://github.com/willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsGithub className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+                <BsGithub
+                  className={`cursor-pointer ${darkMode
+                      ? 'text-white hover:text-gray-200 active:text-gray-400'
+                      : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    } transition-color duration-700`} // Adicionando a classe de transição para a cor do texto
+                />
               </a>
               <a href="https://www.behance.net/willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsBehance className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+                <BsBehance
+                  className={`cursor-pointer ${darkMode
+                    ? 'text-white hover:text-gray-200 active:text-gray-400'
+                    : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    } transition-color duration-700`} />
               </a>
               <a href="https://medium.com/@willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsMedium className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+                <BsMedium
+                  className={`cursor-pointer ${darkMode
+                    ? 'text-white hover:text-gray-200 active:text-gray-400'
+                    : 'text-gray-500 hover:text-gray-700 active:text-black'
+                  } transition-color duration-700`} />
               </a>
               <a href="https://www.figma.com/@willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <FiFigma className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+                <FiFigma
+                  className={`cursor-pointer ${darkMode
+                    ? 'text-white hover:text-gray-200 active:text-gray-400'
+                    : 'text-gray-500 hover:text-gray-700 active:text-black'
+                  } transition-color duration-700`} />
               </a>
             </div>
           </div>
