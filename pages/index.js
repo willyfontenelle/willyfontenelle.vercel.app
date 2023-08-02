@@ -6,9 +6,10 @@ import {
   BsGithub,
   BsBehance,
   BsMedium,
+  BsSunFill
 } from "react-icons/bs";
-import { 
-  FiFigma
+import {
+  FiFigma,
 } from "react-icons/fi";
 import { useState } from "react";
 import avatar from "../public/avatar.jpg"
@@ -30,51 +31,72 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+      <main className=" bg-white dark:bg-zinc-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
-          <nav className="py-8 mb-2 flex justify-center dark:text-white">
+          <nav className="py-8 mb-2 flex justify-center">
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
+                <div
+                  className={`cursor-pointer text-2xl ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    }`}
                   onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
-                />
+                >
+                  {darkMode ? < BsFillMoonStarsFill /> : < BsSunFill />}
+                </div>
               </li>
               <li>
                 <a
-                  className="bg-blue-600 text-white py-3 px-4  border-none rounded-md ml-8"
-                  href="/curriculoWilly-en_compressed.pdf" target="_blank" rel="noopener noreferrer" 
-                >Resume</a>
+                  className={`bg-blue-600 text-white py-3 px-4 border-none rounded-md ml-8 ${darkMode
+                      ? 'hover:bg-blue-700 active:bg-blue-800'
+                      : 'hover:bg-blue-700 active:bg-blue-800'
+                    } focus:outline-none`}
+                  href="/curriculoWilly-en_compressed.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
               </li>
             </ul>
           </nav>
+
           <div className="text-center p-10 py-10">
-            <h2 className="text-4xl py-2 text-blue-600 font-bold dark:text-blue-400 md:text-6xl">
+            <h2 className="text-4xl py-2 text-blue-600 font-bold dark:text-blue-500 md:text-6xl">
               Willy Fontenelle
             </h2>
-            <h3 className="text-2xl py-2 dark:text-white md:text-2xl">
+            <h3 className="text-2xl py-2 text-gray-500 dark:text-gray-400 md:text-2xl">
               Designer and developer
             </h3>
             <p className="text-md py-5 leading-6 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-            I am passionate about how design and technology come together, especially involving design systems in digital products.
+              I am passionate about how design and technology come together, especially involving design systems in digital products.
             </p>
-            <div className="text-4xl flex justify-center gap-4 py-3 text-gray-600 dark:text-gray-400">
-              <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsLinkedin /></a>
-              <a href="https://github.com/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
-              <a href="https://www.behance.net/willyfontenelle" target="_blank" rel="noopener noreferrer"><BsBehance /></a>
-              <a href="https://medium.com/@willyfontenelle" target="_blank" rel="noopener noreferrer"><BsMedium /></a>
-              <a href="https://www.figma.com/@willyfontenelle" target="_blank" rel="noopener noreferrer"><FiFigma /></a>
+            <div className="text-4xl flex justify-center gap-4 py-3">
+              <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank" rel="noopener noreferrer">
+                <BsLinkedin className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+              </a>
+              <a href="https://github.com/willyfontenelle" target="_blank" rel="noopener noreferrer">
+                <BsGithub className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+              </a>
+              <a href="https://www.behance.net/willyfontenelle" target="_blank" rel="noopener noreferrer">
+                <BsBehance className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+              </a>
+              <a href="https://medium.com/@willyfontenelle" target="_blank" rel="noopener noreferrer">
+                <BsMedium className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+              </a>
+              <a href="https://www.figma.com/@willyfontenelle" target="_blank" rel="noopener noreferrer">
+                <FiFigma className={`cursor-pointer ${darkMode ? 'text-white hover:text-gray-200 active:text-gray-400' : 'text-gray-500 hover:text-gray-700 active:text-black'}`} />
+              </a>
             </div>
           </div>
           <div>
             <ul className="flex justify-center">
               <li className='rounded-full w-56 h-56 relative overflow-hidden mb-10 md:h-80 md:w-80'>
-              <Image src={avatar} objectFit="cover" alt='avatar' />
+                <Image src={avatar} objectFit="cover" alt='avatar' />
               </li>
             </ul>
           </div>
         </section>
-        
+
       </main>
     </div>
   );
