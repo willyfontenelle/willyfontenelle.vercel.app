@@ -40,8 +40,10 @@ export default function Home() {
                   className={`cursor-pointer text-2xl ${darkMode
                     ? 'text-white hover:text-gray-200 active:text-gray-400'
                     : 'text-gray-500 hover:text-gray-700 active:text-black'
-                    } transition-color duration-700 `} // Adicionando a classe de transição para a cor do texto
+                    } transition-color duration-700 `}
                   onClick={() => setDarkMode(!darkMode)}
+                  alt="Switch mode" // Adicionar a descrição alternativa do ícone
+                  title="Switch mode" // Adicionar uma dica de ferramenta (tooltip)
                 >
                   {darkMode ? <BsFillMoonStarsFill /> : <BsSunFill />}
                 </div>
@@ -55,9 +57,12 @@ export default function Home() {
                   href="/curriculoWilly-en_compressed.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  alt="PDF Curriculum Vitae" // Adicionar a descrição alternativa do link
+                  title="PDF Curriculum Vitae" // Adicionar uma dica de ferramenta (tooltip)
                 >
                   Resume
                 </a>
+
               </li>
             </ul>
           </nav>
@@ -74,42 +79,66 @@ export default function Home() {
             </p>
             <div className="text-4xl flex justify-center gap-4 py-3">
               <a href="https://www.linkedin.com/in/willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsLinkedin
+                <span
+                  alt="LinkedIn"
+                  title="LinkedIn"
                   className={`cursor-pointer ${darkMode
-                      ? 'text-white hover:text-gray-200 active:text-gray-400'
-                      : 'text-gray-500 hover:text-gray-700 active:text-black'
-                    } transition-color duration-700`} // Adicionando a classe de transição para a cor do texto
-                />
+                    ? 'text-white hover:text-gray-200 active:text-gray-400'
+                    : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    } transition-color duration-700`}
+                >
+                  <BsLinkedin />
+                </span>
               </a>
               <a href="https://github.com/willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsGithub
+                <span
+                  alt="GitHub"
+                  title="GitHub"
                   className={`cursor-pointer ${darkMode
-                      ? 'text-white hover:text-gray-200 active:text-gray-400'
-                      : 'text-gray-500 hover:text-gray-700 active:text-black'
-                    } transition-color duration-700`} // Adicionando a classe de transição para a cor do texto
-                />
+                    ? 'text-white hover:text-gray-200 active:text-gray-400'
+                    : 'text-gray-500 hover:text-gray-700 active:text-black'
+                    } transition-color duration-700`}
+                >
+                  <BsGithub />
+                </span>
               </a>
               <a href="https://www.behance.net/willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsBehance
+                <span
+                  alt="Behance"
+                  title="Behance"
                   className={`cursor-pointer ${darkMode
                     ? 'text-white hover:text-gray-200 active:text-gray-400'
                     : 'text-gray-500 hover:text-gray-700 active:text-black'
-                    } transition-color duration-700`} />
+                    } transition-color duration-700`}
+                >
+                  <BsBehance />
+                </span>
               </a>
               <a href="https://medium.com/@willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <BsMedium
+                <span
+                  alt="Medium"
+                  title="Medium"
                   className={`cursor-pointer ${darkMode
                     ? 'text-white hover:text-gray-200 active:text-gray-400'
                     : 'text-gray-500 hover:text-gray-700 active:text-black'
-                  } transition-color duration-700`} />
+                    } transition-color duration-700`}
+                >
+                  <BsMedium />
+                </span>
               </a>
               <a href="https://www.figma.com/@willyfontenelle" target="_blank" rel="noopener noreferrer">
-                <FiFigma
+                <span
+                  alt="Figma"
+                  title="Figma"
                   className={`cursor-pointer ${darkMode
                     ? 'text-white hover:text-gray-200 active:text-gray-400'
                     : 'text-gray-500 hover:text-gray-700 active:text-black'
-                  } transition-color duration-700`} />
+                    } transition-color duration-700`}
+                >
+                  <FiFigma />
+                </span>
               </a>
+
             </div>
           </div>
           <div>
