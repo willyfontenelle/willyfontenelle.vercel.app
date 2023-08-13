@@ -54,7 +54,7 @@ export default function Home() {
                     ? 'hover:bg-blue-700 active:bg-blue-800'
                     : 'hover:bg-blue-700 active:bg-blue-800'
                     } focus:outline-none`}
-                  href="/curriculoWilly-en_compressed.pdf"
+                  href="/resumeWilly-en_compressed.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   alt="PDF Curriculum Vitae" // Adicionar a descrição alternativa do link
