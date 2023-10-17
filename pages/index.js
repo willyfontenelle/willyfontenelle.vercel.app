@@ -192,9 +192,9 @@ export default function Home() {
           {/* Portfolio section
            */}
 
-          <section className="min-h-screen pb-10">
+          <section className="pb-16">
             <div>
-              <h3 className="text-2xl font-medium px-5 text-gray-600 dark:text-white ">
+              <h3 className="text-2xl font-medium px-5 pb-2 text-gray-600 dark:text-white ">
                 Portfolio
               </h3>
 {/*               <p className="text-md pt-2 pb-4 px-5 leading-6 text-gray-600 dark:text-gray-200">
@@ -209,7 +209,7 @@ export default function Home() {
 
             <div className="block gap-4">
 
-              <div className="text-left pt-4 pb-2 px-5 dark:text-white md:space-x-4">
+              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
@@ -243,7 +243,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="text-left pt-4 pb-2 px-5 dark:text-white md:space-x-4">
+              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
@@ -275,7 +275,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="text-left pt-4 pb-2 px-5 dark:text-white md:space-x-4">
+              <div className="text-left pt-4 pb-4 px-5 dark:text-white md:space-x-4">
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
