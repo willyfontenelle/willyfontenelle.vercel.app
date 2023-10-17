@@ -224,7 +224,7 @@ export default function Home() {
                     Suitcase Design System
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
-                    Creating a new design system from theory to practice
+                    Creating the first version of design system from theory to practice
                   </p>
                   <p className="text-gray-400 py-1 text-sm text-gray-800 dark:text-gray-400">
                     #designsystem #productmanagement #userinterface
@@ -290,7 +290,7 @@ export default function Home() {
                   Parmê & Shopfood
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
-                    (Re)designing white-label e-commerce platform for restaurants and food deliveries
+                    Redesigning white-label e-commerce platform for restaurants and food deliveries
                   </p>
                   <p className="text-gray-400 py-1 text-sm text-gray-800 dark:text-gray-400">
                     #userinterface #userexperience #designsystem #figma
