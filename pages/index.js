@@ -226,7 +226,7 @@ export default function Home() {
                   <p className="text-md text-gray-600 dark:text-gray-200">
                     Creating the first version of design system from theory to practice
                   </p>
-                  <p className="text-gray-400 py-1 text-sm text-gray-800 dark:text-gray-400">
+                  <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
                     #designsystem #productmanagement #userinterface
                     #userexperience #figma #designtokens #frontend-development
                     #react
@@ -259,7 +259,7 @@ export default function Home() {
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
                   Redesigning the experience of recommending drinks for events and monitoring its transition and results                  </p>
-                  <p className="text-gray-400 py-1 text-sm text-gray-800 dark:text-gray-400">
+                  <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
                     #userinterface #userexperience #designthinking #research #designsystem #figma
                     #react
                   </p>
@@ -292,7 +292,7 @@ export default function Home() {
                   <p className="text-md text-gray-600 dark:text-gray-200">
                     Redesigning white-label e-commerce platform for restaurants and food deliveries
                   </p>
-                  <p className="text-gray-400 py-1 text-sm text-gray-800 dark:text-gray-400">
+                  <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
                     #userinterface #userexperience #designsystem #figma
                   </p>
                   <a
