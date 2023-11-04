@@ -46,8 +46,7 @@ export default function Home() {
                         : "text-gray-500 hover:text-gray-700 active:text-black"
                     } transition-color duration-700 `}
                     onClick={() => setDarkMode(!darkMode)}
-                    alt="Switch mode" // Adicionar a descrição alternativa do ícone
-                    title="Switch mode" // Adicionar uma dica de ferramenta (tooltip)
+                    title="Switch mode"
                   >
                     {darkMode ? <BsFillMoonStarsFill /> : <BsSunFill />}
                   </div>
@@ -62,22 +61,13 @@ export default function Home() {
                     href="/resumeWilly-en_compressed.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    alt="PDF Curriculum Vitae" // Adicionar a descrição alternativa do link
-                    title="PDF Curriculum Vitae" // Adicionar uma dica de ferramenta (tooltip)
+                    title="PDF Curriculum Vitae"
                   >
                     Resume
                   </a>
                 </li>
               </ul>
             </nav>
-
-            {/*           <div>
-            <h1>Página Inicial</h1> */}
-            {/* Adicione um link para a outra página */}
-            {/*             <Link href="/other-page">
-              <a>Ir para outra página</a>
-            </Link>
-          </div> */}
 
             <div className="text-center p-10 py-10">
               <h2 className="text-4xl py-2 text-blue-600 font-bold dark:text-blue-500 md:text-6xl transition-color duration-700">
@@ -98,8 +88,6 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <span
-                    alt="LinkedIn"
-                    title="LinkedIn"
                     className={`cursor-pointer ${
                       darkMode
                         ? "text-white hover:text-gray-200 active:text-gray-400"
@@ -115,8 +103,6 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <span
-                    alt="GitHub"
-                    title="GitHub"
                     className={`cursor-pointer ${
                       darkMode
                         ? "text-white hover:text-gray-200 active:text-gray-400"
@@ -132,8 +118,6 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <span
-                    alt="Behance"
-                    title="Behance"
                     className={`cursor-pointer ${
                       darkMode
                         ? "text-white hover:text-gray-200 active:text-gray-400"
@@ -149,8 +133,6 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <span
-                    alt="Medium"
-                    title="Medium"
                     className={`cursor-pointer ${
                       darkMode
                         ? "text-white hover:text-gray-200 active:text-gray-400"
@@ -166,8 +148,6 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <span
-                    alt="Figma"
-                    title="Figma"
                     className={`cursor-pointer ${
                       darkMode
                         ? "text-white hover:text-gray-200 active:text-gray-400"
@@ -183,28 +163,17 @@ export default function Home() {
             <div>
               <ul className="flex justify-center">
                 <li className="rounded-full w-56 h-56 relative overflow-hidden mb-16 md:h-80 md:w-80">
-                  <Image src={avatar} objectFit="cover" alt="avatar" />
+                  <Image src={avatar} layout="fill" alt="avatar" />
                 </li>
               </ul>
             </div>
           </section>
 
-          {/* Portfolio section
-           */}
-
           <section className="pb-16">
             <div>
-              <h3 className="text-2xl font-medium px-5 pb-2 text-gray-600 dark:text-white ">
+              <h3 className="text-2xl font-medium px-5 pb-2 text-gray-600 dark:text-white">
                 Portfolio
               </h3>
-{/*               <p className="text-md pt-2 pb-4 px-5 leading-6 text-gray-600 dark:text-gray-200">
-                Since the beginning of my journey as a freelance designer and
-                developer, I've done remote work for
-                <span className="text-teal-500"> agencies </span>
-                consulted for <span className="text-teal-500">startups </span>
-                and collaborated with talanted people to create digital products
-                for both business and consumer use.
-              </p> */}
             </div>
 
             <div className="block gap-4">
@@ -215,12 +184,11 @@ export default function Home() {
                     <Image
                       src="/suitcase.png"
                       layout="fill"
-                      objectFit="cover"
                       alt="Suitcase Design System"
                     />
                   </div>
                   <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
-                  <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white ">
+                  <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
                     Suitcase Design System
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
@@ -249,16 +217,16 @@ export default function Home() {
                     <Image
                       src="/wine.jpg"
                       layout="fill"
-                      objectFit="cover"
                       alt="Wine Eventos (We Wine)"
                     />
                   </div>
                   <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
-                  <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white ">
+                  <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
                   Wine Eventos (We Wine)
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
-                  Redesigning the experience of recommending drinks for events and monitoring its transition and results                  </p>
+                  Redesigning the experience of recommending drinks for events and monitoring its transition and results
+                  </p>
                   <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
                     #userinterface #userexperience #designthinking #research #designsystem #figma
                     #react
@@ -281,12 +249,11 @@ export default function Home() {
                     <Image
                       src="/shopfood.png"
                       layout="fill"
-                      objectFit="cover"
                       alt="Parmê & Shopfood"
                     />
                   </div>
                   <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
-                  <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white ">
+                  <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
                   Parmê & Shopfood
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
@@ -307,7 +274,6 @@ export default function Home() {
                 </div>
               </div>
 
- 
             </div>
           </section>
         </section>
