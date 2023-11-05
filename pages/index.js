@@ -192,7 +192,7 @@ export default function Home() {
                     Suitcase Design System
                   </h3>
                   <p className="text-md text-gray-600 dark:text-gray-200">
-                    Creating the first version of design system from theory to practice
+                    Creating the first version of a design system from theory to practice
                   </p>
                   <p className="text-gray-400 py-1 text-sm dark:text-gray-400">
                     #designsystem #productmanagement #userinterface
