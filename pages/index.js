@@ -11,7 +11,7 @@ import {
 import { FiFigma } from "react-icons/fi";
 import { useState } from "react";
 import avatar from "../public/avatar.jpg";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -184,6 +184,8 @@ export default function Home() {
                     <Image
                       src="/suitcase.png"
                       layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
                       alt="Suitcase Design System"
                     />
                   </div>
@@ -217,6 +219,8 @@ export default function Home() {
                     <Image
                       src="/wine.jpg"
                       layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
                       alt="Wine Eventos (We Wine)"
                     />
                   </div>
@@ -249,6 +253,8 @@ export default function Home() {
                     <Image
                       src="/shopfood.png"
                       layout="fill"
+                      objectFit="cover"
+                      objectPosition="center"
                       alt="Parmê & Shopfood"
                     />
                   </div>
