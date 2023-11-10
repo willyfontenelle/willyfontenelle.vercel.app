@@ -11,7 +11,7 @@ import {
 import { FiFigma } from "react-icons/fi";
 import { useState } from "react";
 import avatar from "../public/avatar.jpg";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -163,7 +163,7 @@ export default function Home() {
             <div>
               <ul className="flex justify-center">
                 <li className="rounded-full w-56 h-56 relative overflow-hidden mb-16 md:h-80 md:w-80">
-                  <Image src={avatar} layout="fill" alt="avatar" />
+                  <Image src={avatar} alt="avatar" fill sizes="100vw" />
                 </li>
               </ul>
             </div>
@@ -183,11 +183,13 @@ export default function Home() {
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
                       src="/suitcase.png"
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
                       alt="Suitcase Design System"
-                    />
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }} />
                   </div>
                   <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
                   <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
@@ -218,11 +220,13 @@ export default function Home() {
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
                       src="/wine.jpg"
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
                       alt="Wine Eventos (We Wine)"
-                    />
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }} />
                   </div>
                   <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
                   <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
@@ -252,11 +256,13 @@ export default function Home() {
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
                       src="/shopfood.png"
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
                       alt="Parmê & Shopfood"
-                    />
+                      fill
+                      sizes="100vw"
+                      style={{
+                        objectFit: "cover",
+                        objectPosition: "center"
+                      }} />
                   </div>
                   <div className="pt-4 md:pt-0 md:w-1/2 md:pl-4">
                   <h3 className="text-lg font-medium pb-1 text-gray-800 dark:text-white">
