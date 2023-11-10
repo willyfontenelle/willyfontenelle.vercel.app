@@ -11,7 +11,7 @@ import {
 import { FiFigma } from "react-icons/fi";
 import { useState } from "react";
 import avatar from "../public/avatar.jpg";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 
 export default function Home() {
