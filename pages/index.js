@@ -21,8 +21,6 @@ export default function Home() {
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Willy Fontenelle</title>
-        <meta name="description" content="Designer and developer" />
-
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Willy Fontenelle" />
         <meta property="og:description" content="Designer and developer" />
