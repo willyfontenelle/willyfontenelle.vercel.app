@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  distDir: 'build',
+  // distDir: undefined, // Remova ou deixe como undefined para manter o diretório padrão
 }
 
 module.exports = nextConfig
