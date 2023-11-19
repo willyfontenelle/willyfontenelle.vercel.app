@@ -1,7 +1,7 @@
 name: Deploy Next.js site to Pages
 
 on:
-  # Executa quando ocorrem alterações no branch padrão (master)
+  # Executa quando ocorrem alterações no branch padrão (master) ok
   push:
     branches: ["master"]
 
