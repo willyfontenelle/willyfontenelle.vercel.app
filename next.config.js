@@ -2,12 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  // Configuração para exportar o site como HTML estático
   output: {
-    // Configuração para exportar o site como HTML estático
     dir: 'out',
     // Desativar a API de Otimização de Imagens durante a exportação
-    images: { unoptimized: true },
+    images: {
+      unoptimized: true,
+    },
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
