@@ -2,7 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // distDir: undefined, // Remova ou deixe como undefined para manter o diretório padrão
+  output: {
+    // Configuração para exportar o site como HTML estático
+    dir: 'out',
+    // Desativar a API de Otimização de Imagens durante a exportação
+    images: { unoptimized: true },
+  },
 }
 
 module.exports = nextConfig
