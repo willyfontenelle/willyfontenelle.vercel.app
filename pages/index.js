@@ -161,7 +161,7 @@ export default function Home() {
             <div>
               <ul className="flex justify-center">
                 <li className="rounded-full w-56 h-56 relative overflow-hidden mb-16 md:h-80 md:w-80">
-                  <Image src={avatar} alt="avatar" fill sizes="100vw" />
+                  <Image loader={imageLoader} src={avatar} alt="avatar" fill sizes="100vw" />
                 </li>
               </ul>
             </div>
@@ -180,6 +180,7 @@ export default function Home() {
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
+                      loader={imageLoader}
                       src="/suitcase.png"
                       alt="Suitcase Design System"
                       fill
@@ -217,6 +218,7 @@ export default function Home() {
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
+                      loader={imageLoader}
                       src="/wine.jpg"
                       alt="Wine Eventos (We Wine)"
                       fill
@@ -253,6 +255,7 @@ export default function Home() {
                 <div className="md:flex md:flex-1 md:gap">
                   <div className="rounded-md overflow-hidden relative h-48 w-full object-cover md:w-1/2 md:h-auto">
                     <Image
+                      loader={imageLoader}
                       src="/shopfood.png"
                       alt="Parmê & Shopfood"
                       fill
