@@ -29,7 +29,7 @@ export default function Home() {
         <meta property="og:description" content="Designer and developer" />
         <meta
           property="og:image"
-          content="../public/image.jpg"
+          content="https://willyfontenelle.vercel.app/image.jpg"
         />
 
         <link rel="icon" href="/favicon.ico" />
