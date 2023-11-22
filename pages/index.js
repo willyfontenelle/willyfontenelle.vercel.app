@@ -29,7 +29,7 @@ export default function Home() {
         <meta property="og:description" content="Designer and developer" />
         <meta
           property="og:image"
-          content="https://willyfontenelle.github.io/image.jpg"
+          content="../public/image.jpg"
         />
 
         <link rel="icon" href="/favicon.ico" />
