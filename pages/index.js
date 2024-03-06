@@ -26,7 +26,7 @@ export default function Home() {
         <title>Willy Fontenelle</title>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Willy Fontenelle" />
-        <meta property="og:description" content="Designer and developer" />
+        <meta property="og:description" content="Product Designer" />
         <meta
           property="og:image"
           content="https://willyfontenelle.vercel.app/image.jpg"
@@ -74,11 +74,11 @@ export default function Home() {
               </h2>
 
               <h3 className="text-2xl py-2 text-gray-500 dark:text-gray-400 md:text-2xl transition-color duration-700">
-                Designer and developer
+                Product Designer
               </h3>
               <p className="text-md py-5 leading-6 text-gray-600 dark:text-gray-200 max-w-xl mx-auto md:text-md transition-color duration-700">
                 I am passionate about how design and technology come together,
-                especially involving design systems in digital products.
+                especially involving digital products and design systems.
               </p>
               <div className="text-4xl flex justify-center gap-4 py-3">
                 <a
